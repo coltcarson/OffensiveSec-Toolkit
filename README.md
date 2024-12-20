@@ -5,6 +5,58 @@ A curated collection of cybersecurity tools, scripts, and exploits for penetrati
 ## 📚 Overview
 This repository contains various offensive security tools, exploits, and resources organized in a structured manner for easy access and usage. Each component is designed for security research and authorized testing purposes.
 
+## 🔧 Setup and Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- Git
+- Make (optional, for using Makefile commands)
+
+### Setting up the Development Environment
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/OffensiveSec-Toolkit.git
+cd OffensiveSec-Toolkit
+```
+
+2. Create and activate virtual environment:
+```bash
+# Using Make (recommended)
+make venv
+# On Windows
+.venv\Scripts\activate
+# On Unix
+source .venv/bin/activate
+
+# Or manually
+python -m venv .venv
+```
+
+3. Install dependencies:
+```bash
+# Using Make (recommended)
+make setup
+make sync-deps
+
+# Or manually
+pip install pip-tools
+pip-compile requirements.in
+pip-sync requirements.txt
+```
+
+### Managing Dependencies
+
+- Add new dependencies to `requirements.in`
+- Compile dependencies:
+```bash
+make compile-deps
+```
+- Sync your environment:
+```bash
+make sync-deps
+```
+
 ## 🗂️ Repository Structure
 
 ### 📖 Documentation

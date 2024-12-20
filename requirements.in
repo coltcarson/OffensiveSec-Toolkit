@@ -1,0 +1,11 @@
+# Core dependencies
+pip-tools  # For dependency management
+requests   # For HTTP requests
+click      # For CLI interfaces
+colorama   # For colored terminal output
+pyyaml     # For configuration files
+cryptography  # For cryptographic operations
+scapy     # For network packet manipulation
+python-nmap  # For network scanning
+paramiko  # For SSH connections
+pyOpenSSL  # For SSL/TLS functionality
